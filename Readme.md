@@ -1,4 +1,11 @@
-# OLED SSD1306 Linux driver
+# OLED SSD1306/SH1106 Linux driver
+
+## Changes 
+This is a fork of https://github.com/armlabs/ssd1306_linux adding support for SH1106  
+Run make and you'll get 2 binaries, one for ssd1306 and another for sh1106  
+Rest of the readme remains the same and instructions apply also for sh1106_bin
+
+# Intro
 This is plain c code using linux I2C device node (/dev/i2c-X X for 0,1,2,3...).
 Please make sure the linux has run "modprobe i2c-dev".
 128x64 and 128x32 are supporting and using I2C interface ONLY
